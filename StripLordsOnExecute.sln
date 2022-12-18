@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StripLordsOnExecute", "StripLordsOnExecute.csproj", "{9EE81CC9-97C7-45E0-BCBD-6E03CC8586B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EE81CC9-97C7-45E0-BCBD-6E03CC8586B7}.Debug|x64.ActiveCfg = Debug|x64
+		{9EE81CC9-97C7-45E0-BCBD-6E03CC8586B7}.Debug|x64.Build.0 = Debug|x64
+		{9EE81CC9-97C7-45E0-BCBD-6E03CC8586B7}.Release|x64.ActiveCfg = Release|x64
+		{9EE81CC9-97C7-45E0-BCBD-6E03CC8586B7}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD331CBF-7A0A-489B-89BF-6DD27B5B230F}
+	EndGlobalSection
+EndGlobal
