@@ -20,19 +20,25 @@ namespace StripLordsOnExecute
                 {
                     try
                     {
-                        for (int i = 0; i < 12; i++)
+                        if (killCharacterActionDetail.Equals(KillCharacterAction.KillCharacterActionDetail.Executed))
                         {
-                            if (!victim.BattleEquipment[i].IsEmpty)
+                            if (killer == Hero.MainHero)
                             {
-                                killer.PartyBelongedTo.ItemRoster.Add(new ItemRosterElement(victim.BattleEquipment[i], 1));
-                                victim.BattleEquipment[i].Clear();
+                                for (int i = 0; i < 12; i++)
+                                {
+                                    if (!victim.BattleEquipment[i].IsEmpty)
+                                    {
+                                        killer.PartyBelongedTo.ItemRoster.Add(new ItemRosterElement(victim.BattleEquipment[i], 1));
+                                        victim.BattleEquipment[i].Clear();
+                                    }
+                                }
+
+                                InformationMessage msg = new InformationMessage(
+                                    victim.FirstName.ToString() + "'s equipment is now yours."
+                                );
+                                InformationManager.DisplayMessage(msg);
                             }
                         }
-
-                        InformationMessage msg = new InformationMessage(
-                            victim.FirstName.ToString() + "'s equipment is now yours."    
-                        );
-                        InformationManager.DisplayMessage(msg);
                     }
                     catch (Exception ex)
                     {
